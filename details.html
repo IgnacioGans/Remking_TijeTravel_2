@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Tije Travel</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" >
+  <link rel="stylesheet" href="http://manos.malihu.gr/repository/custom-scrollbar/demo/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="css/rk_style.css"></head>
+
+<body class="rk_relative" data-spy="scroll" data-target="navbar-example">
+
+  <nav class="navbar navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Project name</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <!-- <li class="active">
+          <a href="#" class="btn-back">Inicio</a>
+        </li>
+        -->
+        <li>
+          <a href="login.html">Login</a>
+        </li>
+        <li>
+          <a href="index.html">Lista de usuarios</a>
+        </li>
+      </ul>
+    </div>
+    <!--/.nav-collapse --> </div>
+</nav>
+
+<div class="container">
+  <div class="starter-template">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            Datos del Usuario
+            <!-- <span class="rkUser_name"></span>
+          -->
+        </div>
+        <div class="panel-body">
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label for="inputNombre3" class="col-sm-5 control-label">Nombre</label>
+              <div class="col-sm-7 rkUser_name"></div>
+            </div>
+            <div class="form-group">
+              <label for="inputNombre3" class="col-sm-5 control-label">Usuario</label>
+              <div class="col-sm-7 rkUser_username"></div>
+            </div>
+            <div class="form-group">
+              <label for="inputNombre3" class="col-sm-5 control-label">Email</label>
+              <div class="col-sm-7 rkUser_email"></div>
+            </div>
+            <div class="form-group">
+              <label for="inputNombre3" class="col-sm-5 control-label">Phone</label>
+              <div class="col-sm-7 rkUser_phone"></div>
+            </div>
+
+            <div class="rk_vermas">
+              <div class="rk_BoxAddress">
+                <div id="map" class="rk_map"></div>
+                <button type="button" class="btn btn-default btn-block" data-toggle="collapse" data-target="#RkAdrress_collapse" aria-expanded="false" aria-controls="RkAdrress_collapse">Ver Dirección Completa</button>
+                <div class="collapse" id="RkAdrress_collapse">
+                  <div class="well">
+                    <div class="form-group">
+                      <label for="inputNombre3" class="col-sm-5 control-label">Geo Latitud</label>
+                      <div class="col-sm-7 rkUser_GeoLat"></div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputNombre3" class="col-sm-5 control-label">Geo Longitud</label>
+                      <div class="col-sm-7 rkUser_GeoLng"></div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputNombre3" class="col-sm-5 control-label">Ciudad</label>
+                      <div class="col-sm-7 rkUser_AddressCity"></div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputNombre3" class="col-sm-5 control-label">Calle</label>
+                      <div class="col-sm-7 rkUser_AddressStreet"></div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputNombre3" class="col-sm-5 control-label">Suite</label>
+                      <div class="col-sm-7 rkUser_AddressSuite"></div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputNombre3" class="col-sm-5 control-label">ZipCode</label>
+                      <div class="col-sm-7 rkUser_AddressZipcode"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="btn btn-default btn-block rkm" data-toggle="collapse" data-target="#RkCompany_collapse" aria-expanded="false" aria-controls="RkCompany_collapse">Ver Compañia</button>
+              <div class="collapse" id="RkCompany_collapse">
+                <div class="form-group">
+                  <label for="inputNombre3" class="col-sm-5 control-label">BS</label>
+                  <div class="col-sm-7 rkUser_CompanyBs"></div>
+                </div>
+                <div class="form-group">
+                  <label for="inputNombre3" class="col-sm-5 control-label">catchPhrase</label>
+                  <div class="col-sm-7 rkUser_CompanyCatchPhrase"></div>
+                </div>
+                <div class="form-group">
+                  <label for="inputNombre3" class="col-sm-5 control-label">Nombre de la Compañia</label>
+                  <div class="col-sm-7 rkUser_CompanyName"></div>
+                </div>
+                <div class="form-group">
+                  <label for="inputNombre3" class="col-sm-5 control-label">Website</label>
+                  <div class="col-sm-7 rkUser_Website"></div>
+                </div>
+              </div>
+
+              <label class="label" for="" style="color:black">POSTEO:</label>
+              <div class="rk_postUserID"></div>
+
+            </div>
+
+            <div id="rk_BtnGroupBackAndSeeMore" class="btn-group btn-group-justified" role="group" aria-label="...">
+              <div class="btn-group" role="group">
+                <button type="button" id="rk_BtnVermas" class="btn btn-primary">Ver más</button>
+              </div>
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-primary btn-back ">Regresar</button>
+              </div>
+            </div>
+            <button id="rk_BtnSimpleBack" type="button" class="btn btn-primary btn-back btn-block ">Regresar</button>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- /.container -->
+
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script src="http://manos.malihu.gr/repository/custom-scrollbar/demo/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/remking.ajax.js"></script>
+<script src="js/google.maps.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtEkwsPiHj-hMWLYWqCQy7xi6PwYuUtkU&callback=Rk_initMap"></script>
+<script src="js/remking.scroll.js"></script>
+</body>
+</html>
